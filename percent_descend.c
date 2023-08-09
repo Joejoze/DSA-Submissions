@@ -34,9 +34,12 @@ int main()
         scanf("%f", &students[i].percentage);
     }
 
-    for (int i = 0; i < 4; i++) {
-        for (int j = i + 1; j < 5; j++) {
-            if (students[i].roll_no < students[j].roll_no) {
+    for (int i = 0; i < 4; i++) 
+    {
+        for (int j = i + 1; j < 5; j++) 
+        {
+            if (students[i].roll_no < students[j].roll_no) 
+            {
                 temp = students[i];
                 students[i] = students[j];
                 students[j] = temp;
