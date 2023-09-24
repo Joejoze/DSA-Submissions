@@ -2,8 +2,9 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
+Program ID :- 02
+Description :- C program to generate Pascal Triangle using array.
 */
-
 
 #include <stdio.h>
 int main()
