@@ -2,12 +2,9 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
+Program ID :- 10
+Description :- Program to print all unique elements in an array. 
 */
-
-
-
-
-
 
 #include <stdio.h>
 
