@@ -2,11 +2,9 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
+Program ID :- 05 
+Description :- C program to find the largest element in an array
 */
-
-
-
-
 
 #include <stdio.h>
 int main() 
@@ -21,7 +19,7 @@ int main()
         printf("Enter number%d: ", i + 1);
         scanf("%lf", &arr[i]);
     }
-    
+    // storing the largest number to arr[0]
     for (int i = 1; i < n; ++i) 
     {
         if (arr[0] < arr[i]) 
