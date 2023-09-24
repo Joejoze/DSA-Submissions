@@ -2,7 +2,13 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
-*/
+Program ID :- 06
+Description :- Menu driven program to perform the following operations in an ARRAY
+1. INSERT
+2. DELETE
+3. TRAVERSE
+4. SEARCH */
+
 
 #include <stdio.h>
 int stack[4];
