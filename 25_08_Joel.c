@@ -2,13 +2,10 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
+Program ID :- 08
+Description :-  Program that compares two arrays and returns 1 if they are identical and 0
+otherwise.
 */
-
-
-
-
-
-
 
 #include <stdio.h>
 
