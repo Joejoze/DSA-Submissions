@@ -2,10 +2,9 @@
 Name :- Joel Jose
 Roll no :- 25
 Batch :- B    
+Program ID :- 04
+Description :- C Program to take roll_no, name , percentange of 5 students using array of structure and display the records in descending order of percentange.
 */
-
-
-
 
 
 #include <stdio.h>
