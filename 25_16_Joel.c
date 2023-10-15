@@ -10,25 +10,29 @@ Description :- Linked List implementation of Stack
 #include <stdlib.h>
 
 // Define the structure for a node in the linked list
-struct node {
+struct node 
+{
     int info;           // Data of the node
     struct node *next;  // Pointer to the next node
 };
 
 // Function to allocate memory for a new node
-struct node *getnode(void) {
+struct node *getnode(void) 
+{
     return (struct node *)malloc(sizeof(struct node));
 }
 
 // Function to free memory for a given node
-void freenode(struct node *p) {
+void freenode(struct node *p) 
+{
     free(p);
 }
 
 struct node *stack = NULL; // Initialize the stack using the linked list
 
 // Function to push an element onto the stack
-void push(int x) {
+void push(int x)
+{
     struct node *newnode = getnode();
     newnode->info = x;
     newnode->next = stack;
@@ -36,8 +40,10 @@ void push(int x) {
 }
 
 // Function to pop an element from the stack
-int pop() {
-    if (stack == NULL) {
+int pop() 
+{
+    if (stack == NULL) 
+    {
         printf("Stack is empty\n");
         return -1; // or some error code
     }
@@ -49,21 +55,25 @@ int pop() {
 }
 
 // Function to display the stack
-void display() {
+void display()
+{
     struct node *temp = stack;
-    if (temp == NULL) {
+    if (temp == NULL) 
+    {
         printf("Stack is empty\n");
         return;
     }
     printf("Stack: ");
-    while (temp != NULL) {
+    while (temp != NULL)
+        {
         printf("%d -> ", temp->info);
         temp = temp->next;
     }
     printf("NULL\n");
 }
 
-int main() {
+int main() 
+{
     int choice, x;
 
     while (1) {
@@ -74,7 +84,8 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch (choice) {
+        switch (choice) 
+        {
             case 1:
                 printf("Enter element to push: ");
                 scanf("%d", &x);
@@ -82,7 +93,8 @@ int main() {
                 break;
             case 2:
                 x = pop();
-                if (x != -1) {
+                if (x != -1)
+                {
                     printf("Popped: %d\n", x);
                 }
                 break;
